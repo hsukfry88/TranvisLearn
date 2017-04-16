@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add karma-phantomjs-launcher --dev
+  /usr/local/bin/node /usr/local/bin/yarn add karma-firefox-launcher --dev
 
 PATH: 
   /usr/local/bin/pip:/usr/local/bin/python:/Library/Frameworks/Python.framework/Versions/3.6/bin/:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
@@ -15,13 +15,15 @@ Platform:
 
 npm manifest: 
   {
-    "devDependencies": {
-      "jasmine-core": "^2.5.2",
-      "karma": "^1.6.0",
-      "karma-chrome-launcher": "^2.0.0",
-      "karma-jasmine": "^1.1.0",
-      "karma-phantomjs-launcher": "^1.0.4"
-    }
+  	"scripts": {
+  		"test": "karma start karma.conf.js — single-run"
+  	},
+  	"devDependencies": {
+  		"jasmine-core": "^2.5.2",
+  		"karma": "^1.6.0",
+  		"karma-jasmine": "^1.1.0",
+  		"karma-phantomjs-launcher": "^1.0.4"
+  	}
   }
 
 yarn manifest: 

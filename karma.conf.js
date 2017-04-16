@@ -14,7 +14,7 @@ config.set({
 
 
     // list of files / patterns to load in the browser
-    files: ['./indexSpec.js'],
+    files: ['./index.js', './index.spec.js'],
 
 
     // list of files to exclude
@@ -51,7 +51,7 @@ config.set({
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['Firefox'],
 
 
     // Continuous Integration mode
