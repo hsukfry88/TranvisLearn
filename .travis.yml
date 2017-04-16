@@ -16,4 +16,4 @@ before_install:
 before_script:
 - npm install
 after_script:
-- scp -o stricthostkeychecking=no index.js root@59.110.168.70:/home
+- sshpass -p 3322506ry scp -P 22 -o stricthostkeychecking=no index.js root@59.110.168.70:/home
