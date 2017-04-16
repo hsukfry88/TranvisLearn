@@ -11,4 +11,4 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 - cp ./ssh_config ~/.ssh/config
 after_script:
-- scp -o stricthostkeychecking=no index.js root@59.110.168.70:/home
+- scp -o stricthostkeychecking=no index.js root@59.110.168.70:/
