@@ -4,7 +4,7 @@ node_js:
 script: node app.js
 before_install:
 - openssl aes-256-cbc -K $encrypted_4dafad2c851f_key -iv $encrypted_4dafad2c851f_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - echo -e "Host 59.110.168.70\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - export DISPLAY=:99.0
