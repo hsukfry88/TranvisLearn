@@ -1,8 +1,4 @@
 language: node_js
-addons:
-  apt:
-    packages:
-    - sshpass
 node_js:
 - '6'
 script: karma start karma.conf.js — single-run
@@ -20,4 +16,4 @@ before_install:
 before_script:
 - npm install
 after_script:
-- sshpass -p 3322506ry scp -P 22 -o stricthostkeychecking=no index.js root@59.110.168.70:/home
+- scp -o stricthostkeychecking=no index.js root@59.110.168.70:/home
