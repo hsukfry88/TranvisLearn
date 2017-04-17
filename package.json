@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"test": "karma start karma.conf.js — single-run"
+		"test": "node index"
 	},
 	"devDependencies": {
 		"jasmine-core": "^2.5.2",
